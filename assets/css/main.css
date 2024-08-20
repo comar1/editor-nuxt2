@@ -1,0 +1,104 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* TIPTAP EDITOR CSS */
+:root {
+    --purple-light: #958DF1;
+    --black: #000;
+    --white: #fff;
+    --gray-3: #ccc;
+    --gray-2: #ccc;
+  }
+  .tiptap{
+    background-color: lightgrey;
+    color: black;
+    border-radius: 0.5;
+    padding: 1.5rem 2rem;
+    outline: 1px solid black;
+  }
+  .tiptap :first-child {
+    margin-top: 0;
+  }
+  
+  .tiptap ul,
+  .tiptap ol {
+    padding: 0 1rem;
+    margin: 1.25rem 1rem 1.25rem 0.4rem;
+  }
+  
+  .tiptap li p {
+    margin-top: 0.25em;
+    margin-bottom: 0.25em;
+  }
+  
+  .tiptap h1,
+  .tiptap h2,
+  .tiptap h3,
+  .tiptap h4,
+  .tiptap h5,
+  .tiptap h6 {
+    line-height: 1.1;
+    margin-top: 2.5rem;
+    text-wrap: pretty;
+  }
+  
+  .tiptap h1,
+  .tiptap h2 {
+    margin-top: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .tiptap h1 {
+    font-size: 1.4rem;
+  }
+  
+  .tiptap h2 {
+    font-size: 1.2rem;
+  }
+  
+  .tiptap h3 {
+    font-size: 1.1rem;
+  }
+  
+  .tiptap h4,
+  .tiptap h5,
+  .tiptap h6 {
+    font-size: 1rem;
+  }
+  
+  .tiptap code {
+    background-color: #958DF1; /* replaced var(--purple-light) with a hex value */
+    border-radius: 0.4rem;
+    color: #000; /* replaced var(--black) with a hex value */
+    font-size: 0.85rem;
+    padding: 0.25em 0.3em;
+  }
+  
+  .tiptap pre {
+    background: #000; /* replaced var(--black) with a hex value */
+    border-radius: 0.5rem;
+    color: #fff; /* replaced var(--white) with a hex value */
+    font-family: 'JetBrainsMono', monospace;
+    margin: 1.5rem 0;
+    padding: 0.75rem 1rem;
+  }
+  
+  .tiptap pre code {
+    background: none;
+    color: inherit;
+    font-size: 0.8rem;
+    padding: 0;
+  }
+  
+  .tiptap blockquote {
+    border-left: 3px solid #ccc; /* replaced var(--gray-3) with a hex value */
+    margin: 1.5rem 0;
+    padding-left: 1rem;
+  }
+  
+  .tiptap hr {
+    border: none;
+    border-top: 1px solid #ccc; /* replaced var(--gray-2) with a hex value */
+    margin: 2rem 0;
+  }
